@@ -1,4 +1,4 @@
-# My Homepage
-Website: [Homepage](https://rene78.github.io/Homepage/)
+# Web Business Card
+Website: [Homepage](https://renek.cc/)
 
-My homepage. Work in progress...
+Inspired by [Carrd](https://carrd.co/).
