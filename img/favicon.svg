@@ -3,14 +3,14 @@
 
  <g>
   <title>background</title>
-  <rect x="-1" y="-1" width="452" height="452" id="canvas_background" fill="#fff"/>
-  <g id="canvasGrid" display="none">
-   <rect id="svg_4" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  <rect fill="#000000" id="canvas_background" height="452" width="452" y="-1" x="-1"/>
+  <g display="none" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_4"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <text font-style="normal" font-weight="bold" fill="#c4660d" stroke-width="0" x="64.832924" y="324.473879" id="svg_2" font-size="250" font-family="'Simonetta', serif" text-anchor="start" xml:space="preserve" transform="matrix(1.5598151341987807,0,0,1.6513240142186678,39.81077786430913,-150.65101685028404) " stroke="#000">K</text>
-  <text opacity="0.9" font-weight="bold" fill="#107189" stroke-width="0" x="20.369477" y="207.666278" id="svg_1" font-size="250" font-family="'Simonetta', serif" text-anchor="start" xml:space="preserve" transform="matrix(1.6365015300546304,0,0,1.5621179299723167,-36.88648733015039,12.806933395809462) " stroke="#000">R</text>
+  <text stroke="#000" transform="matrix(1.1538595363378559,0,0,1.8113160255291902,112.67531160564232,-198.58183726854799) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="250" id="svg_2" y="335.345144" x="92.495558" stroke-width="0" fill="#ffffff" font-weight="bold" font-style="normal">K</text>
+  <text stroke="#000" transform="matrix(1.3437991565911156,0,0,1.8507557254184344,-26.704217013304124,-12.546211929989433) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="250" id="svg_1" y="207.098328" x="20.952637" stroke-width="0" fill="#ffffff" font-weight="bold">R</text>
  </g>
 </svg>
