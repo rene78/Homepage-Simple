@@ -27,14 +27,17 @@ body,html {
   left: 50%;
   width: 100%;
   transform: translate(-50%,-50%);
-  animation: animatetop 0.4s;
-  /* width: 70% */
+  /* animation: animatetop 0.4s; */
 }
 
-@keyframes animatetop {
+/* @keyframes animatetop {
   from {top: 0%;}
   to {top: 35%;}
-}
+} */
+
+/* .text-container > * {
+  transition: opacity 1000ms cubic-bezier(0.7, 0.25, 0.58, 1) 0ms;
+} */
 
 h1, h2, li {
   color: #fff;
@@ -76,21 +79,48 @@ svg {
   height: 60%;
 }
 
+@keyframes showText {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 h1 {
   font-size: 2.5em;
   line-height: 1.25;
   font-weight: 900;
   margin: 30px;
-  opacity: 1;
-  transition: opacity 1s;
+}
+
+.proverb, .intro-text, .availability, .icons {
+  animation-name: showText;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  animation-fill-mode: both;
+}
+
+.intro-text {
+  animation-delay: 125ms;
+}
+
+.availability {
+  animation-delay: 250ms;
+}
+
+.icons {
+  animation-delay: 375ms;
 }
 
 h2 {
-  margin: 20px
+  margin: 20px;
 }
 
-.link {
+.icons .link {
   background-color: white;
+  transition: background-color 0.25s ease;
+}
+
+.icons .link:hover {
+  background-color: #96E0A7;
 }
 
 .companies {
@@ -124,7 +154,18 @@ h2 {
   filter: grayscale(100%);
 }
 
+.companies a:hover {
+  filter: none;
+}
+
 #deere {
-  width: auto;
-  height: 4em;
+  width: 5em;
+  height: auto;
+}
+
+/*Don't show the last company logo on very small screens. Else it messes up the display*/
+@media (max-width: 360px) {
+  #last-company {
+    display: none;
+  }
 }

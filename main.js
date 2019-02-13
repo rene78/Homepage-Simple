@@ -1,5 +1,3 @@
-window.onload
-
 function availability() {
   const d = new Date();
 
