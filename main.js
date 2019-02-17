@@ -33,5 +33,6 @@ function availability() {
 
   let infoText = defaultText + availabilityDate;
   //console.log(infoText); //Wieder verfügbar im März 2019
-  document.querySelector(".availability").innerText = infoText;
+  //document.querySelector(".availability").innerText = infoText;
+  document.querySelector(".availability").innerText = "Momentan nicht verfügar";
 }
