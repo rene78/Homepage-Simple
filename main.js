@@ -1,38 +1,51 @@
-function availability() {
-  const d = new Date();
+window.addEventListener("load", () => {
+  //get current date
+  const currentDate = new Date();
+  //get current month
+  const currentMonth = currentDate.getMonth();
+  //get current full year
+  const currentFullYear = currentDate.getFullYear();
+  //when i started working
+  const startYear = 2005;
 
-  // console.log(d)
-  // console.log(d.getMonth());
-  // console.log(d.getFullYear());
+  document.querySelector(".availability").innerText = getAvailability(currentMonth, currentFullYear);
+  document.querySelector(".experience").innerText = getYearsExperience(startYear, currentFullYear);
+});
 
-  let defaultText = "Wieder verfügbar ab ";
+function getAvailability(cMonth, cYear) {
+  const defaultText = "Wieder verfügbar ab ";
   let availabilityDate;
 
-  switch (d.getMonth()) {
+  switch (cMonth) {
     case 0:
     case 1:
-      availabilityDate = "März " + d.getFullYear();
+      availabilityDate = "März " + cYear;
       break;
     case 2:
     case 3:
     case 4:
-      availabilityDate = "Juni " + d.getFullYear();
+      availabilityDate = "Juni " + cYear;
       break;
     case 5:
     case 6:
     case 7:
-      availabilityDate = "September " + d.getFullYear();
+      availabilityDate = "September " + cYear;
       break;
     case 8:
     case 9:
     case 10:
     case 11:
-      availabilityDate = "Januar " + (d.getFullYear() + 1);
+      availabilityDate = "Januar " + (cYear + 1);
       break;
   }
 
-  let infoText = defaultText + availabilityDate;
-  //console.log(infoText); //Wieder verfügbar im März 2019
-  //document.querySelector(".availability").innerText = infoText;
-  document.querySelector(".availability").innerText = "Verfügar für neue Herausforderungen";
+  const infoText = defaultText + availabilityDate;
+  // console.log(infoText);
+  return infoText;
+}
+
+function getYearsExperience(sYear, cYear) {
+  const experience = cYear - sYear;
+  // console.log(experience);
+  return experience;
 }
